@@ -74,7 +74,6 @@ PACKAGECONFIG ??= "\
     embedder-for-target \
     fontconfig \
     mallinfo2 \
-    impeller-3d \
     "
 
 PACKAGECONFIG[asan] = "--asan"
@@ -103,7 +102,6 @@ PACKAGECONFIG[ubsan] = "--ubsan"
 PACKAGECONFIG[unoptimized] = "--unoptimized"
 PACKAGECONFIG[verbose] = "--verbose"
 PACKAGECONFIG[vulkan] = "--enable-vulkan"
-PACKAGECONFIG[impeller-3d] = "--enable-impeller-3d"
 
 CLANG_BUILD_ARCH = "${@clang_build_arch(d)}"
 CLANG_TOOLCHAIN_TRIPLE = "${@gn_clang_triple_prefix(d)}"
